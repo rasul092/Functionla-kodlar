@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+//Saniyəni saat, dəqiqə və saniyəyə çevirib çap edən funksiya
+
+void vaxtcevir(int vaxt){
+    int saat= vaxt/3600;
+    int deqiqe=(vaxt%3600)/60;
+    int saniye=vaxt%60;
+    cout<<vaxt<<"saniye = "<<saat<<"saat"<<deqiqe<<"deqiqe"<<saniye<<"saniye"<<endl;
+}
+int main(){
+    int vaxt;
+    cout<<"Vaxti daxil edin : ";
+    cin>>vaxt;
+    vaxtcevir(vaxt);
+    return 0;
+}
