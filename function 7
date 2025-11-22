@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+//Ededin bolenlerinin sayi
+
+void saybolen(int eded){
+    int k=0;
+    for(int i=1;i<=eded;i++){
+        if(eded%i==0){
+            k=k+1;
+        }
+    }
+    cout<<"ededi bolenlerinin sayi : "<<k<<endl;
+}
+int main(){
+    int eded;
+    cout<<"ededi daxil edin : ";
+    cin>>eded;
+    saybolen(eded);
+    return 0;
+}
