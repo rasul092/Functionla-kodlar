@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+// Fəsili təyin edən və çap edən funksiya
+void fesilTapan(int ay) {
+    if (ay == 12 || ay == 1 || ay == 2) {
+        cout << "Fəsil: Qış" << endl;
+    } else if (ay >= 3 && ay <= 5) {
+        cout << "Fəsil: Yaz" << endl;
+    } else if (ay >= 6 && ay <= 8) {
+        cout << "Fəsil: Yay" << endl;
+    } else if (ay >= 9 && ay <= 11) {
+        cout << "Fəsil: Payız" << endl;
+    } else {
+        cout << "Yanlış ay nömrəsi daxil edilib!" << endl;
+    }
+}
+
+int main() {
+    int ay;
+    cout << "Ay nömrəsini daxil edin (1-12): ";
+    cin >> ay;
+
+    fesilTapan(ay); 
+
+    return 0;
+}
