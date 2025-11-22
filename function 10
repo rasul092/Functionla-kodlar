@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+// İstifadəçidən ədədləri alıb cəmini hesablayan və çap edən funksiya
+
+void ededlerinCeminiHesabla() {
+    int say, eded, cem = 0;
+
+    cout << "Neçə ədəd daxil etmək istəyirsiniz? ";
+    cin >> say;
+
+    for (int i = 1; i <= say; i++) {
+        cout << i << "-ci ədədi daxil edin: ";
+        cin >> eded;
+        cem += eded;
+    }
+
+    cout << "Daxil edilən ədədlərin cəmi: " << cem << endl;
+}
+
+int main() {
+    ededlerinCeminiHesabla(); 
+    return 0;
+}
