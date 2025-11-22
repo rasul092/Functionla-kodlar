@@ -1,0 +1,23 @@
+//Dairenin sahe ve cevresini tapan (funksiya)
+#include <iostream>
+using namespace std;
+
+const double pi=3.14;
+
+void sahehesab(double r) {
+    double sahe=pi * r * r;
+    cout<<"dairenin sahesi: "<<sahe<<endl;
+}
+void cevrehesab(double r){
+    double cevre = 2 * pi * r;
+    cout<<"dairenin cevresi: "<<cevre<<endl;
+}
+int main(){
+    double r;
+    cout<<"Dairenin radiusunu daxil edin: ";
+    cin>>r;
+    sahehesab(r);
+    cevrehesab(r);
+    
+    return 0;
+}
