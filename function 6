@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+//Ededin tersini tapan kod funksiya ile
+
+void ededters(int eded){
+    int ters=0;
+    int q;
+    while (eded>0){
+        q=eded%10;
+        ters=ters*10+q;
+        eded=eded/10;
+    }
+    cout<<"Ededin tersi : "<<ters<<endl;
+}
+
+int main(){
+    int eded;
+    cout<<"ededi daxil et : ";
+    cin>>eded;
+    ededters(eded);
+    return 0;
+}
