@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+//3 Ededin ededi ortasini  çap edən funksiya
+void edediorta(double n1,double n2,double n3){
+    
+    double orta=(n1+n2+n3)/3;
+    cout<<"ededi orta: "<<orta<<endl;
+}
+int main(){
+    double n1, n2, n3;
+    cout<<"n1-i daxil et: ";
+    cin>>n1;
+    cout<<"n2-i daxil et: ";
+    cin>>n2;
+    cout<<"n3-u daxil et: ";
+    cin>>n3;
+    edediorta(n1,n2,n3);
+    return 0;
+}
